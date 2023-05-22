@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:job_tracker/pages/loading.dart';
+import 'package:job_tracker/pages/home.dart';
 
 void main() => runApp(MaterialApp(
-  initialRoute: '/',
+  initialRoute: '/home',
   routes: {
-    '/': (context) => const Loading(),
-    // '/home': (context) => const Home(),
+    '/home': (context) => const Home(),
   }
 ));
