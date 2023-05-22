@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
                         subtitle: Text(applications[index].jobTitle),
                         leading: CircleAvatar(
                           backgroundColor: Colors.white,
-                          backgroundImage: AssetImage('assets/${applications[index].image}'),
+                          backgroundImage: AssetImage('assets/images/${applications[index].image}'),
                         ),
                       ),
                     ),
