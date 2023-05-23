@@ -17,6 +17,17 @@ class _HomeState extends State<Home> {
     Application(companyName: "Microsoft", jobTitle: "Software Engineer", location: "San Francisco, California", image: "microsoft.png"),
     Application(companyName: "Apple", jobTitle: "Software Engineer Intern", location: "Toronto, Ontario", image: "apple.png"),
     Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
+    Application(companyName: "SpaceX", jobTitle: "Rocket Engineer", location: "San Francisco, California", image: "spacex.jpg"),
   ];
 
   @override
@@ -54,7 +65,9 @@ class _HomeState extends State<Home> {
                       ),
                       child: ListTile(
                         title: Text(applications[index].companyName),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, '/detailed');
+                        },
                         subtitle: Text(applications[index].jobTitle),
                         leading: CircleAvatar(
                           backgroundColor: Colors.white,
